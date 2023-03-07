@@ -1,0 +1,44 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #444444;;
+    text-align: center;
+    /* padding: 2rem; */
+    /* padding: 2rem; */
+}
+.footer h2{
+    font-size: 30px;
+    /* padding: 1.5rem;         */
+    font-family: "Satisfy", sans-serif;
+    color: darkorange;
+    padding-top: 2rem;
+
+
+}
+.footer p{
+    font-size: 17px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.footer-icons{
+    padding-bottom: 2rem;
+    /* background-color: rgb(148, 148, 59); */
+}
+.footer-icon{
+    padding: 1rem;
+    border: 1px solid rgb(241, 241, 243);
+    border-radius: 100%;
+    font-size: 25px;
+    color: white;
+    margin-left: 0.5rem;
+    /* background-color: red; */
+}
+.footer-icons :hover{
+    background-color: darkorange;
+}
+@media screen and (max-width: 768px){
+    .footer {
+        margin-top: 12rem;
+    }
+    
+   }

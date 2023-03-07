@@ -1,0 +1,142 @@
+.slider{
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 96vh;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-90%);
+    transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 600px) {
+    .slide img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.slide img{
+    height: 100%;
+}
+.current{
+    opacity: 1;
+    transform: translateX(0);
+}
+.content {
+    position: absolute;
+    top: 23rem;
+    opacity: 0;
+    width: 100%;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    animation: slide-up 1s ease 0.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    color: white;
+}
+
+@keyframes slide-up {
+    0%{
+        visibility: visible;
+        top: 23rem;
+    }
+    100%{
+        visibility: visible;
+        top: 14rem;
+    }
+}
+@media screen and (max-width:600px) {
+  .content{
+    width: 80%;
+  } 
+}
+.content > *{
+    /* color: #fff; */
+    margin-bottom: 1rem;
+}
+.content h2{
+    font-family: "Satisfy", sans-serif;
+    font-size: 40px;
+
+}
+.content p{
+    width: 50%;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+.current{
+    opacity: 1;
+    transform: translateX(0);
+}
+.current .content{
+    opacity: 1; 
+}
+.arrow{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    border: none;
+    background: rgba(221, 221, 221, 0.3);
+    border-radius: 50%;
+    color:lightgray;
+}
+.next {
+    right: 1.5rem;
+}
+.prev {
+    left: 1.5rem;
+}
+hr{
+    height: 2px;
+    /* background: #fff ; */
+    width: 50%;
+}
+.slider_btn{
+    padding: 10px;
+    margin: 0.3rem;
+    width: 150px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(241, 135, 14);
+
+}
+.slider_btn:hover{
+    background-color: darkorange;
+    border: none;
+    transition: all 0.7s ease;
+    border: 2px solid rgb(241, 135, 14);
+}
+
+@media screen and (max-width:1024px){
+    .content {
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:768px){
+    .content {
+        padding: 0rem;
+        /* height: */
+    }
+    .content {
+        margin-top: 0rem;
+        font-size: 12px;
+    }
+    
+    
+}
